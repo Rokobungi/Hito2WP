@@ -75,12 +75,6 @@ header {
     text-align: center;
 }
 
-.logo-section-vdd {
-    background-color: #f4f4f4;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
 .big-logo {
     max-width: 300px;
     height: auto;
@@ -88,6 +82,16 @@ header {
 }
 
 .big-logo:hover {
+    transform: scale(1.05);
+}
+
+.big-logo-vdd {
+    max-width: 900px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.big-logo-vdd:hover {
     transform: scale(1.05);
 }
 
