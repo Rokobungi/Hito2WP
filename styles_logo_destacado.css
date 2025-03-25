@@ -282,11 +282,11 @@ footer {
     position: absolute;
     right: 0;
     font-size: 12px;
-    color: #888;
+    color: #cccccc;
     text-decoration: none;
 }
 
 .about-link:hover {
-    color: #555;
+    color: #ffffff;
     text-decoration: underline;
 }
