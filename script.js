@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".contact-form");
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita el envío real del formulario
+        event.preventDefault(); // Evita el envío del formulario al servidor
 
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (name && email && message) {
             showPopup("¡Tu mensaje ha sido enviado exitosamente!");
-            form.reset(); // Limpia el formulario después de enviar
+            form.reset(); // Limpia el formulario
         } else {
             showPopup("Por favor, completa todos los campos.");
         }
@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const popup = document.createElement("div");
         popup.className = "popup-message";
         popup.textContent = message;
-
         document.body.appendChild(popup);
 
         setTimeout(() => {
