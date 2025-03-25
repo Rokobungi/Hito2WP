@@ -75,6 +75,12 @@ header {
     text-align: center;
 }
 
+.logo-section-vdd {
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
 .big-logo {
     max-width: 300px;
     height: auto;
