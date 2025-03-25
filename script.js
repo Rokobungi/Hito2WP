@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.addEventListener("click", () => {
         navMenu.classList.toggle("show");
 
+    });
+
     const form = document.querySelector(".contact-form");
     const submitButton = form.querySelector("button[type='submit']");
 
