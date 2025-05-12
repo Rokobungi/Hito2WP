@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Intranet - Tech Materials</title>
+    <link rel="stylesheet" href="styles_tm.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-text-header">
+                <img src="img/logo-tm-small.png" alt="Icono Tech Materials" class="logo-icon">
+                <span>Tech Materials</span>
+            </div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <div class="nav-wrapper">
+                    <ul class="nav-menu" id="nav-menu">
+                        </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="intranet-container">
+        <div id="login-section">
+            <h2 class="section-title">Acceso Intranet</h2>
+            <form id="login-form" class="login-form">
+				<label for="username">Usuario:</label>
+				<input type="text" id="username" name="username" required value="nuevo">
+
+				<label for="password">Contraseña:</label>
+				<div class="password-container">  <input type="password" id="password" name="password" required value="TM_nuevo_2025">
+					<button type="button" id="toggle-password" class="toggle-password">
+						&#x1f441;  </button>
+				</div>
+
+				<label for="captcha">Captcha:</label>
+				<div class="captcha" id="captcha">ABCD</div>
+				<input type="text" id="captcha-input" name="captcha-input" required placeholder="Ingresa el Captcha">
+
+				<button type="submit">Iniciar Sesión</button>
+			</form>
+            <div id="login-error" style="color: red;"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Materials. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
